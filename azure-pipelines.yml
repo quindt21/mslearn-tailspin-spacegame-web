@@ -9,14 +9,14 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
   demands:
-  -npm
+  - npm
 
 variables:
   buildConfiguration: 'Release'
 
 steps:
 - task: UseDotNet@2
-  display: 'Use .NET Core SDK 3.1.100'
+  displayName: 'Use .NET Core SDK 3.1.100'
   inputs:
     packageType: sdk
     version: 3.1.100
